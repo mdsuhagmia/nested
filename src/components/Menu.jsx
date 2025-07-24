@@ -1,68 +1,33 @@
-// Menu.jsx
-import React from "react";
-import { NavLink } from "react-router-dom";
-import Container from "../components/Container"; // path adjust করো
+import React from 'react'
+import Container from './Container'
+import { NavLink } from 'react-router-dom'
 
 const Menu = () => {
   return (
-    <nav className="bg-blue-600 py-2 shadow-md">
+    <nav className='bg-blue-500 py-2'>
       <Container>
-        <div className="flex justify-between items-center">
-          <h1 className="text-white text-3xl font-bold">Suhag</h1>
-          <ul className="flex gap-6 text-lg font-semibold">
-            <li>
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-yellow-300 border-b-2 border-yellow-300"
-                    : "text-white hover:text-yellow-200"
-                }
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-yellow-300 border-b-2 border-yellow-300"
-                    : "text-white hover:text-yellow-200"
-                }
-              >
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/service"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-yellow-300 border-b-2 border-yellow-300"
-                    : "text-white hover:text-yellow-200"
-                }
-              >
-                Service
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-yellow-300 border-b-2 border-yellow-300"
-                    : "text-white hover:text-yellow-200"
-                }
-              >
-                Contact
-              </NavLink>
-            </li>
-          </ul>
+        <div className='flex justify-between items-center'>
+          <div><h1 className='text-white text-4xl font-bold font-mono'>Suhag</h1></div>
+          <div>
+            <ul className='flex gap-6 text-xl font-semibold font-sans'>
+              <li>
+                <NavLink to={"/"} className={({isActive})=>isActive ? "text-white border-b-2 border-amber-500 transition-all": "text-white hover:text-yellow-200"}>Home</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/about"} className={({isActive})=>isActive ? "text-white border-b-2 border-amber-500 transition-all": "text-white hover:text-yellow-200"}>About</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/about/service"} className={({isActive})=>isActive ? "text-white border-b-2 border-amber-500 transition-all": "text-white hover:text-yellow-200"}>Service</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/about/service/contact"} className={({isActive})=>isActive ? "text-white border-b-2 border-amber-500 transition-all": "text-white hover:text-yellow-200"}>Contact</NavLink>
+              </li>
+            </ul>
+          </div>
         </div>
       </Container>
     </nav>
-  );
-};
+  )
+}
 
-export default Menu;
+export default Menu
