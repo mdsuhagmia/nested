@@ -10,8 +10,8 @@ let routing = createBrowserRouter(createRoutesFromElements(
   <Route element={<RootLayout/>}>
     <Route path='/' element={<Home/>}></Route>
     <Route path='/about' element={<About/>}></Route>
-    <Route path='/about/service' element={<Service/>}></Route>
-    <Route path='/about/service/contact' element={<Contact/>}></Route>
+    <Route path='/service' element={<Service/>}></Route>
+    <Route path='/contact' element={<Contact/>}></Route>
   </Route>
 ))
 

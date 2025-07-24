@@ -11,16 +11,16 @@ const Menu = () => {
           <div>
             <ul className='flex gap-6 text-xl font-semibold font-sans'>
               <li>
-                <NavLink to={"/"} className={({isActive})=>isActive ? "text-white border-b-2 border-amber-500 transition-all": "text-white hover:text-yellow-200"}>Home</NavLink>
+                <NavLink to={"/"} className={({isActive})=>isActive ? "text-white border-b-2 border-amber-500 transition-all" : "text-white hover:text-yellow-200"}>Home</NavLink>
               </li>
               <li>
-                <NavLink to={"/about"} className={({isActive})=>isActive ? "text-white border-b-2 border-amber-500 transition-all": "text-white hover:text-yellow-200"}>About</NavLink>
+                <NavLink to={"/about"} className={({isActive})=>isActive ? "text-white border-b-2 border-amber-500 transition-all" : "text-white hover:text-yellow-200"}>About</NavLink>
               </li>
               <li>
-                <NavLink to={"/about/service"} className={({isActive})=>isActive ? "text-white border-b-2 border-amber-500 transition-all": "text-white hover:text-yellow-200"}>Service</NavLink>
+                <NavLink to={"/service"} className={({isActive})=>isActive ? "text-white border-b-2 border-amber-500 transition-all" : "text-white hover:text-yellow-200"}>Service</NavLink>
               </li>
               <li>
-                <NavLink to={"/about/service/contact"} className={({isActive})=>isActive ? "text-white border-b-2 border-amber-500 transition-all": "text-white hover:text-yellow-200"}>Contact</NavLink>
+                <NavLink to={"/contact"} className={({isActive})=>isActive ? "text-white border-b-2 border-amber-500 transition-all" : "text-white hover:text-yellow-200"}>Contact</NavLink>
               </li>
             </ul>
           </div>
